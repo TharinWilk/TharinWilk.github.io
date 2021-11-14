@@ -1,0 +1,320 @@
+ *, :root {
+  font-size: 20px;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  position: relative;
+  margin: 0px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(131,58,180);
+  background: -moz-linear-gradient(5deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: -webkit-linear-gradient(5deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: linear-gradient(5deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 4rem;
+}
+
+
+/* Navbar CSS */
+
+#nav {
+  position: sticky;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  z-index: 10;
+  display: block;
+}
+
+#nav-list {
+  height: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  background-color: #11111170;
+}
+
+#nav-list :hover {
+  background-color: #11111185;
+  transition: 0.5s ease-in-out;
+  color: #ffffff;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.nav-item a {
+  font-size: 1.2rem;
+  color: #dddddd90;
+}
+
+/* Landing CSS */
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: URL("https://wallpaperaccess.com/full/232357.jpg");
+}
+
+.landing-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff;
+  opacity: 0;
+  animation fade-in 1.5s ease-in forwards;
+}
+
+#profile-img {
+  width: 40vw;
+  max-width: 300px;
+  padding: 1.5rem;
+}
+
+#profile-text {
+  font-size: 2.2rem;
+  opacity: 0;
+  color: #000000;
+  animation-delay: 1.5s;
+  text-align: center;
+}
+
+/* About Section */
+
+#about {
+  min-height: 110vh;
+  background: silver;
+  z-index: 2;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  display: flex;
+}
+
+.about-info {
+  min-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about-title {
+  margin: 0;
+}
+
+.leftside {
+  transition: 1s;
+}
+
+.leftpara {
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+.rightside {
+  transition: 1s;
+}
+
+.rightpara {
+  align-self: flex-end;
+}
+
+.skills-list {
+  min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-skill-container {
+  display: inline-block;
+  padding: 20px;
+}
+
+.img-skill-container img {
+  max-width: 200px;
+  padding: 0px 15px;
+  transition: 1.5s;
+}
+
+.img-skill-container img.scrolled {
+  transform: scale(1) translateX(0rem);
+}
+
+#css-img-container {
+  animation-delay: 1.25s
+}
+
+#js-img-container {
+  animation-delay: 1.5s
+}
+
+
+/* Projects Section */
+
+#projects {
+  min-height: 110vh;
+  background: black;
+  z-index: 1;
+  transform: translateY(-10vh);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.project-link {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  transition: .5s;
+  cursor: default;
+}
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-window {
+  width: 400px;
+  height: 33vh;
+  background: black;
+  border: 10px solid silver;
+  border-radius: 5px;
+  margin: 100px 30px 10px 30px;
+  transition: 0.5s;
+}
+
+.project-list :hover {
+  cursor: pointer;
+}
+
+.project-window:hover {
+  width: 440px;
+  height: 35vh;
+}
+
+#project-window-one {
+  background-image: URL("Images/diceroller.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-two {
+  background-image: URL("Images/Coreys-Welding-Pic.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-three {
+  background-image: URL("Images/Spitzer-Pic.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Contact Section */
+
+#contacts {
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+#contact-title {
+  margin: 0 2rem;
+  padding: 0;
+}
+
+.contact-options {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+
+/* Animation Classes */
+
+.fade-in {
+  animation: fade-in 1.5s ease-in forwards;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.slide-left-right {
+  animation: slidelr 2s ease-in-out 1.5s forwards;
+}
+
+@keyframes slidelr {
+  0% {transform: translateX(-20rem);}
+  100% {transform: translateX(0rem);}
+}
+
+@keyframes showSkill {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.top-down {
+  transition: 0.75s;
+}

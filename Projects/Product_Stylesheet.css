@@ -1,0 +1,179 @@
+*, :root {
+ box-sizing: border-box;
+ margin: 0;
+ scroll-behavior: smooth;
+ color: black;
+ font-size: 20px;
+ font-family: 'Poppins', sans-serif;
+ text-decoration: none;
+ list-style-type: none;
+}
+
+body {
+ position: relative;
+ margin: 0px;
+ height: auto;
+ overflow-x: hidden;
+ overflow-y: hidden;
+ background: black;
+}
+
+/*Section: Navbar */
+
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+}
+
+.nav-list {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 5;
+}
+
+.nav-list li {
+  font-size: 3rem;
+  z-index: 10;
+  display: block;
+}
+
+.nav-list li a {
+  font-size: 1.7rem;
+  -webkit-text-stroke: 0.5px white;
+  font-weight: bold;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.nav-list li :hover{
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.toggle-navbar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggle-navbar img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Section: landing */
+
+#landing {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Section: Logo  */
+
+.logo {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo p {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: bold;
+  -webkit-text-stroke: 2.5px white;
+  z-index: 5;
+}
+
+.logo img {
+  position: relative;
+  max-width: 50em;
+  height: auto;
+  z-index: 5;
+}
+
+
+/* Section: video & Overlay */
+
+#landing video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  mix-blend-mode: overlay;
+}
+
+/* Section: Media Queries */
+
+@media (max-width: 850px) {
+  .logo {
+    flex-direction: column;
+  }
+  .nav-list {
+    position: absolute;
+    flex-direction: column;
+    z-index: 10;
+    background: black;
+    top: -20rem;
+    transition: 0.75s;
+  }
+  .toggle-navbar {
+    display: block;
+    transition: 0.75s;
+    z-index: 20;
+  }
+}
+
+/* Section: Sections */
+
+.offscreen-section {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+#skills {
+  transform: translateX(-100%);
+  background-color: black;
+}
+
+#projects {
+  transform: translateY(100%);
+  background: green;
+}
+
+#contact {
+  width: 300px;
+  right: -300px;
+  background: blue;
+}

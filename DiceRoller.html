@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Roller</title>
+
+    <link rel="stylesheet" href="DiceRoller.css">
+
+    <script src="DiceRoller.js" charset="utf-8" defer></script>
+
+  </head>
+  <body>
+    <main id="main">
+      <article id="window">
+        <header id="header">
+          <h1>Dice Roller</h1>
+
+          <div id="dice_bar">
+            <div id="d4" class="dice">
+              <img src="C:\Users\Tharin\Pictures\Dice Images\D4\d4_4.png" alt="A 4-sided die" class="dice" onclick="rollD4()">
+            </div>
+
+            <div class="dice" id="d6">
+              <img src="C:\Users\Tharin\Pictures\Dice Images\D6\d6_6.png" alt="A 6-sided die" class="dice" onclick="rollD6()">
+            </div>
+
+            <div class="dice" id="d8">
+              <img src="C:\Users\Tharin\Pictures\Dice Images\d8\d8_8.png" alt="A 8-sided die" class="dice" onclick="rollD8()">
+            </div>
+
+            <div class="dice" id="d10">
+              <img src="C:\Users\Tharin\Pictures\Dice Images\D10\d10_10.png" alt="A 10-sided die" class="dice" onclick="rollD10()">
+            </div>
+
+            <div class="dice" id="d12">
+              <img src="C:\Users\Tharin\Pictures\Dice Images\d12\d12_12.png" alt="A 12-sided die" class="dice" onclick="rollD12()">
+
+            </div>
+
+            <div class="dice" id="d20">
+              <img src="C:\Users\Tharin\Pictures\Dice Images\d20\d20_20.png" alt="A 20-sided die" class="dice" onclick="rollD20()">
+
+            </div>
+
+            <div class="dice" id="d100">
+
+            </div>
+          </div>
+        </header>
+
+        <section id="roller_table">
+          <!--Visual dice roller -->
+        </section>
+
+        <footer id="footer">
+          <div class="footer_stats">
+            <span id="low">Lowest Die Roll: 0</span>
+            <span id="total">Total: 0</span>
+            <span id="high">Highest Die Roll: 0</span>
+          </div>
+          <button type="button" name="reset" id="reset" onclick="clickRemove()">Reset</button>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
+
+<!-- What I want my Dice Roller to look like and how it should work.
+I. Apperrance
+  1. The Dice roller should be centered in the page within a large box window
+    a) If the screen size is smaller or on a phone, then the box should take the screen's full size.
+  2. The roller should havce dice roll on screen similarly to google dice roller or roll20.
+
+II. Function
+  1. The roller should work when a dice icon is clicked.
+  2. clicking multiple times rolls additional dice.
+  3. The roller should track the dice rolled until cleared by a button.
+  4. The roller should have the option to add the dice, take the highest, or take the lowest.
+  5. The dice roller should display the above value on screen.
+-->
