@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
 }
 
-
 body {
   position: relative;
   margin: 0px;
@@ -34,7 +33,6 @@ h3 {
   font-size: 3rem;
   margin-top: 4rem;
 }
-
 
 /* Navbar CSS */
 
@@ -85,6 +83,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-image: URL("https://wallpaperaccess.com/full/232357.jpg");
+  backgroung-repeat: no-repeat;
 }
 
 .landing-profile {
