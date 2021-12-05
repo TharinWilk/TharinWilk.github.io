@@ -16,18 +16,10 @@
         <img src="C:\Users\Tharin\Documents\Java Projects\Portfolio\Images\hamburger menu.png" alt="">
       </div>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#landing" id="landing-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" id="skills-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" id="project-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" id="contact-link">Contact Me</a>
-        </li>
+        <li class="nav-item" id="landing-link">Home</li>
+        <li class="nav-item" id="skills-link">About</li>
+        <li class="nav-item" id="project-link">Projects</li>
+        <li class="nav-item" id="contact-link">Contact Me</li>
       </ul>
     </nav>
 
@@ -45,15 +37,39 @@
       </section>
 
       <section class="offscreen-section" id="skills">
-        <!-- What We Do -->
+        <h2>What I Do</h2>
+        <p class="about-text">I am a certified Wielder and can wield with MIG – Gas Metal Arc Welding (GMAW), TIG – Gas Tungsten Arc Welding (GTAW), and Stick – Shielded Metal Arc Welding (SMAW). I can work on a variety of materials and range of objects. Whether you need metalwork for a new item or some repair work on a cracked or broken piece of equipment, your satisfaction is gaurenteed when you choose Corey's Welding.</p>
+        <img src="https://cdn.pixabay.com/photo/2012/11/28/10/32/welding-67640_1280.jpg" alt="">
       </section>
 
       <section class="offscreen-section" id="projects">
-        <!-- Projects in the Past -->
+        <h2 class="section-title">Project Showcase</h2>
+        <div class="project-list">
+          <div class="project-windows" id="project-window-one"></div>
+          <div class="project-windows" id="project-window-two"></div>
+          <div class="project-windows" id="project-window-three"></div>
+          <div class="project-windows" id="project-window-four"></div>
+          <div class="project-windows" id="project-window-five"></div>
+          <div class="project-windows" id="project-window-six"></div>
+        </div>
       </section>
 
       <section class="offscreen-section" id="contact">
-        <!-- Contacts -->
+        <form class="form" action="https://formsubmit.co/tharin.m.wilk@gmail.com" method="POST">
+          <h3 id="form-title">Get A Free Quote</h3>
+          <input  class="form-section" type="text" name="name" value="" placeholder="Name" Required>
+          <input  class="form-section" type="text" name="" value="" placeholder="Phone (optional)">
+          <input  class="form-section" type="text" name="email" value="" placeholder="Email" Required>
+          <textarea  class="form-section"name="message" value="" placeholder="Your message" rows="8" cols="23" Required></textarea>
+          <input type="text" name="_honey" style="display:none">
+          <button type="submit" name="submit" id="submit">Submit</button>
+        </form>
+        <div class="contacts">
+          <h4>Corey's Welding</h4>
+          <p>3050 W 634th Hwy</p>
+          <p>Hawks, MI 49743</p>
+          <p>Phone: (989) 255-9999</p>
+        </div>
       </section>
     </main>
   </body>

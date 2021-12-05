@@ -18,6 +18,10 @@ body {
  background: black;
 }
 
+::-webkit-scrollbar {
+  width: 1px;
+}
+
 /*Section: Navbar */
 
 #navbar {
@@ -38,20 +42,16 @@ body {
 }
 
 .nav-list li {
-  font-size: 3rem;
-  z-index: 10;
-  display: block;
-}
-
-.nav-list li a {
   font-size: 1.7rem;
   -webkit-text-stroke: 0.5px white;
   font-weight: bold;
   transition: 0.5s;
   z-index: 10;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.nav-list li :hover{
+.nav-list :hover{
   color: white;
   -webkit-text-stroke: 2px black;
 }
@@ -79,6 +79,7 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
 
 /* Section: Logo  */
 
@@ -150,6 +151,9 @@ body {
     transition: 0.75s;
     z-index: 20;
   }
+  .contacts {
+    display: none;
+  }
 }
 
 /* Section: Sections */
@@ -160,20 +164,150 @@ body {
   min-height: 100vh;
   z-index: 3;
   transition: 0.5s;
+  background: #000000F2;
 }
 
-#skills {
-  transform: translateX(-100%);
-  background-color: black;
+.section-title {
+  color: white;
+  text-align: center;
+  margin-top: 1.75em;
+  font-size: 3rem;
+}
+/* Section: About */
+
+#skills h2 {
+  margin: 100px auto 10px auto;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
 }
 
-#projects {
-  transform: translateY(100%);
-  background: green;
+.about-text {
+  color: white;
+  margin: 5vh 20vw;
+  padding: 5vh 5vw;
 }
 
-#contact {
-  width: 300px;
-  right: -300px;
-  background: blue;
+#skills img {
+  max-width: 32vw;
+  max-height: 64vh;
+  min-width: 320px;
+  min-height: 180px;
+  object-fit: contain;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Section: Projects */
+
+.project-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-windows {
+  max-width: 32vw;
+  max-height: 18vh;
+  min-width: 320px;
+  min-height: 180px;
+  margin: 50px;
+  background: #00000000;
+}
+
+#project-window-one {
+  background-image: URL("https://colnicdesign.com/wp-content/uploads/2020/03/f1-1.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-two {
+  background-image: URL("https://i.pinimg.com/originals/98/2a/15/982a1577511a5658923e60f2f1249fdc.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-three {
+  background-image: URL("https://i.pinimg.com/originals/80/d0/bf/80d0bf68ee1a33fbaa5bd87e798a3d0b.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-four {
+  background-image: URL("https://i.pinimg.com/originals/ec/1e/f6/ec1ef6ed1ee3238a34cf428ea46e8718.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-five {
+  background-image: URL("https://i.pinimg.com/236x/d7/60/df/d760df120589edf10447d3f5cfef7ec3.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-window-six {
+  background-image: URL("https://www.hoofprints.com/images/BKBARBHCrack.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section: Contact Section */
+
+.form {
+  width: 350px;
+  margin: 100px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+#form-title {
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 0.75rem;
+}
+
+#submit {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+#submit:hover {
+  background: skyblue;
+}
+
+.contacts {
+  width: 100%;
+  min-height: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.contacts p, .contacts h4 {
+  color: #dddddd;
+  font-size: 0.75rem;
 }

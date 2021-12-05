@@ -101,7 +101,7 @@ h1 {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ffffff;
   opacity: 0;
-  animation fade-in 1.5s ease-in forwards;
+  animation fade-in 0.5s ease-in forwards;
 }
 
 #profile-img {
@@ -121,7 +121,7 @@ h1 {
 /* About Section */
 
 #about {
-  min-height: 110vh;
+  min-height: 210vh;
   background: silver;
   z-index: 2;
   position: relative;
@@ -285,6 +285,9 @@ h1 {
   align-items: flex-start;
 }
 
+.contact-options p a {
+  color: white;
+}
 
 /* Animation Classes */
 
