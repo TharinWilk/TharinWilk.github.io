@@ -83,7 +83,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-image: URL("https://wallpaperaccess.com/full/232357.jpg");
-  backgroung-repeat: no-repeat;
+  backgroung-repeat: no-repeat !important;
 }
 
 .landing-profile {
