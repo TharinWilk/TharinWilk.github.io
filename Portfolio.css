@@ -293,6 +293,22 @@ h1 {
   color: white;
 }
 
+/* Section: Media Query */
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  #nav-list {
+    height: 5rem;
+    background-color: #11111195;
+  }
+  #nav-list :hover {
+    background-color: #111111;
+  }
+  .nav-item a {
+    font-size: 2rem;
+    color: #dddddd90;
+  }
+}
+
 /* Animation Classes */
 
 .fade-in {
