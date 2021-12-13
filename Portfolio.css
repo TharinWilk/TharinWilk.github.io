@@ -1,5 +1,5 @@
  *, :root {
-  font-size: 20px;
+  font-size: 3vh;
   list-style-type: none;
   box-sizing: border-box;
   text-decoration: none;
@@ -143,6 +143,17 @@ h1 {
 
 #about-title {
   margin: 0;
+}
+
+.about-text {
+  margin: 0 5vw;
+}
+
+.about-text-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-decoration: underline;
 }
 
 .leftside {
