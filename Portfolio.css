@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 }
 
+
 body {
   position: relative;
   margin: 0px;
@@ -83,7 +84,7 @@ h3 {
   justify-content: center;
   align-items: center;
   background-image: URL("https://wallpaperaccess.com/full/232357.jpg");
-  backgroung-repeat: no-repeat !important;
+  background-repeat: no-repeat !important;
   background-attachment: scroll;
   background-position: center top;
   background-size: auto;
@@ -102,6 +103,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #000000;
+  text-shadow: white 0px 0px 15px;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #ffffff;
   opacity: 0;
@@ -120,12 +122,14 @@ h1 {
   color: #000000;
   animation-delay: 1.5s;
   text-align: center;
+  text-shadow: white 0px 0px 10px;
 }
 
 /* About Section */
 
 #about {
   min-height: 210vh;
+  padding-bottom: 5vh;
   background: silver;
   z-index: 2;
   position: relative;
