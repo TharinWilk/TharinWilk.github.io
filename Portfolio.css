@@ -138,7 +138,7 @@ h1 {
 }
 
 .about-info {
-  width: 60vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -178,7 +178,7 @@ h1 {
 }
 
 .skills-list {
-  min-width: 40vw;
+  min-width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -191,6 +191,7 @@ h1 {
 }
 
 .img-skill-container img {
+  width: 20vw;
   max-width: 200px;
   padding: 0px 15px;
   transition: 1.5s;
